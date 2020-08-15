@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Shadow Example</title>
+  <script src="./index.js" type="module"></script>
+</head>
+
+<body>
+  <h1>A shadow example</h1>
+
+  <style>
+    .container {
+      color: green;
+    }
+    .container .shadow-class {
+      color: red;
+    }
+  </style>
+
+  <div>
+    This is out of shadow DOM.
+  </div>
+  <div class="container">
+    This is out of shadow DOM with CSS.
+  </div>
+  <div class="container">
+    <a-shadow></a-shadow>
+  </div>
+</body>
+</html>
