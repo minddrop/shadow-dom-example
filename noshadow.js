@@ -17,14 +17,13 @@ template.innerHTML = `
   </div>
 `;
 
-class AShadow extends HTMLElement {
+class NormalElement extends HTMLElement {
   constructor() {
     super();
     if (!this.shadowRoot) {
-      this.attachShadow({ mode: 'open' });
-      this.shadowRoot.appendChild(template.content.cloneNode(true));
+      this.appendChild(template.content.cloneNode(true));
     }
   }
 }
 
-customElements.define('a-shadow', AShadow);
+customElements.define('normal-element', NormalElement);
